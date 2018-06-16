@@ -1,0 +1,8 @@
+package net_arch.array;
+
+option java_package = "ru.spbau.egorov.net_arch.ru.spbau.egorov.net_arch.network";
+option java_outer_classname = "NetworkArray";
+
+message Array{
+    repeated int32 array = 1;
+}
