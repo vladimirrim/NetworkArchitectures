@@ -8,6 +8,12 @@ import javafx.scene.control.TextArea;
 import javafx.stage.Stage;
 import ru.spbau.egorov.net_arch.network.Client;
 
+import java.io.DataInputStream;
+import java.io.DataOutputStream;
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.util.ArrayList;
 
 public class ClientMenuController {
@@ -92,6 +98,18 @@ public class ClientMenuController {
         }
 
         showChart(xValues, yValues1, yValues2, yValues3, label, xLabel, yLabel);
+        Path path = Paths.get("./statistics.txt");
+        try {
+            DataOutputStream dos = new DataOutputStream(Files.newOutputStream(path));
+            String sep = System.getProperty("file.separator");
+            dos.write(("xValues\tSORTING_TIME\tSERVER_TIME\tCLIENT_TIME" + sep).getBytes());
+            dos.write((String.valueOf(xValues.size()) + sep).getBytes());
+            for(int i=0;i<xValues.size();i++){
+                dos.write((String.valueOf(xValues.get(i)) +String.valueOf(yValues1.get(i)) +String.valueOf(yValues2.get(i)) +String.valueOf(yValues3.get(i)) + sep).getBytes());
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
     private void showChart(ArrayList<Integer> xValues, ArrayList<Integer> yValues1, ArrayList<Integer> yValues2, ArrayList<Integer> yValues3, String label, String xLabel, String yLabel) {
