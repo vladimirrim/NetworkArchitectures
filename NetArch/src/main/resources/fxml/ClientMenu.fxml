@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.121"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="ru.spbau.egorov.net_arch.controller.ClientMenuController">
+    <Button alignment="CENTER" layoutX="268.0" layoutY="355.0" mnemonicParsing="false" onAction="#runClient"
+            text="Run Client" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="243.0"
+            AnchorPane.rightAnchor="243.0" AnchorPane.topAnchor="355.0"/>
+    <SplitPane dividerPositions="0.5" layoutY="-1.0" prefHeight="355.0" prefWidth="600.0" AnchorPane.bottomAnchor="55.0"
+               AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
+            <TextArea fx:id="arrSize" prefHeight="200.0" prefWidth="200.0"
+                      promptText="Enter number of elements in array" style="-fx-text-alignment: middle;"
+                      VBox.vgrow="ALWAYS"/>
+            <TextArea fx:id="timeDelay" prefHeight="200.0" prefWidth="200.0"
+                      promptText="Enter time delay between requests" VBox.vgrow="ALWAYS"/>
+            <TextArea fx:id="hostName" prefHeight="200.0" prefWidth="200.0" promptText="Enter server hostname"/>
+            <TextArea fx:id="changingParameter" prefHeight="200.0" prefWidth="200.0"
+                      promptText="Enter changing parameter ( REQUEST_DELAY, ARRAY_SIZE, CLIENTS_COUNT)"/>
+            <TextArea fx:id="minVal" prefHeight="200.0" prefWidth="200.0" promptText="Enter parameter`s min value"/>
+            <TextArea fx:id="requestsCount" prefHeight="200.0" prefWidth="200.0"
+                      promptText="Enter number of requests for one client"/>
+        </VBox>
+        <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
+            <TextArea fx:id="clientsCount" prefHeight="200.0" prefWidth="200.0" promptText="Enter number of clients"
+                      VBox.vgrow="ALWAYS"/>
+            <TextArea fx:id="archType" prefHeight="200.0" prefWidth="200.0"
+                      promptText="Enter type of architecture ( NONBLOCKING, MULTI, MULTI_WITH_WRITE)"
+                      VBox.vgrow="ALWAYS"/>
+            <TextArea fx:id="port" prefHeight="200.0" prefWidth="200.0" promptText="Enter server port"/>
+            <TextArea fx:id="increment" prefHeight="200.0" prefWidth="200.0" promptText="Enter increment of parameter"/>
+            <TextArea fx:id="maxVal" prefHeight="200.0" prefWidth="200.0" promptText="Enter parameter`s max value"/>
+        </VBox>
+    </SplitPane>
+</AnchorPane>

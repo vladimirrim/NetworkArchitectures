@@ -4,518 +4,570 @@
 package ru.spbau.egorov.net_arch.network;
 
 public final class NetworkArray {
-  private NetworkArray() {}
-  public static void registerAllExtensions(
-      com.google.protobuf.ExtensionRegistry registry) {
-  }
-  public interface ArrayOrBuilder extends
-      // @@protoc_insertion_point(interface_extends:net_arch.array.Array)
-      com.google.protobuf.MessageOrBuilder {
-
-    /**
-     * <code>repeated int32 array = 1;</code>
-     */
-    java.util.List<java.lang.Integer> getArrayList();
-    /**
-     * <code>repeated int32 array = 1;</code>
-     */
-    int getArrayCount();
-    /**
-     * <code>repeated int32 array = 1;</code>
-     */
-    int getArray(int index);
-  }
-  /**
-   * Protobuf type {@code net_arch.array.Array}
-   */
-  public static final class Array extends
-      com.google.protobuf.GeneratedMessage implements
-      // @@protoc_insertion_point(message_implements:net_arch.array.Array)
-      ArrayOrBuilder {
-    // Use Array.newBuilder() to construct.
-    private Array(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
-      super(builder);
-      this.unknownFields = builder.getUnknownFields();
-    }
-    private Array(boolean noInit) { this.unknownFields = com.google.protobuf.UnknownFieldSet.getDefaultInstance(); }
-
-    private static final Array defaultInstance;
-    public static Array getDefaultInstance() {
-      return defaultInstance;
+    private NetworkArray() {
     }
 
-    public Array getDefaultInstanceForType() {
-      return defaultInstance;
+    public static void registerAllExtensions(
+            com.google.protobuf.ExtensionRegistry registry) {
     }
 
-    private final com.google.protobuf.UnknownFieldSet unknownFields;
-    @java.lang.Override
-    public final com.google.protobuf.UnknownFieldSet
-        getUnknownFields() {
-      return this.unknownFields;
-    }
-    private Array(
-        com.google.protobuf.CodedInputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      initFields();
-      int mutable_bitField0_ = 0;
-      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
-          com.google.protobuf.UnknownFieldSet.newBuilder();
-      try {
-        boolean done = false;
-        while (!done) {
-          int tag = input.readTag();
-          switch (tag) {
-            case 0:
-              done = true;
-              break;
-            default: {
-              if (!parseUnknownField(input, unknownFields,
-                                     extensionRegistry, tag)) {
-                done = true;
-              }
-              break;
-            }
-            case 8: {
-              if (!((mutable_bitField0_ & 0x00000001) == 0x00000001)) {
-                array_ = new java.util.ArrayList<java.lang.Integer>();
-                mutable_bitField0_ |= 0x00000001;
-              }
-              array_.add(input.readInt32());
-              break;
-            }
-            case 10: {
-              int length = input.readRawVarint32();
-              int limit = input.pushLimit(length);
-              if (!((mutable_bitField0_ & 0x00000001) == 0x00000001) && input.getBytesUntilLimit() > 0) {
-                array_ = new java.util.ArrayList<java.lang.Integer>();
-                mutable_bitField0_ |= 0x00000001;
-              }
-              while (input.getBytesUntilLimit() > 0) {
-                array_.add(input.readInt32());
-              }
-              input.popLimit(limit);
-              break;
-            }
-          }
-        }
-      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-        throw e.setUnfinishedMessage(this);
-      } catch (java.io.IOException e) {
-        throw new com.google.protobuf.InvalidProtocolBufferException(
-            e.getMessage()).setUnfinishedMessage(this);
-      } finally {
-        if (((mutable_bitField0_ & 0x00000001) == 0x00000001)) {
-          array_ = java.util.Collections.unmodifiableList(array_);
-        }
-        this.unknownFields = unknownFields.build();
-        makeExtensionsImmutable();
-      }
-    }
-    public static final com.google.protobuf.Descriptors.Descriptor
-        getDescriptor() {
-      return ru.spbau.egorov.net_arch.network.NetworkArray.internal_static_net_arch_array_Array_descriptor;
+    public interface ArrayOrBuilder extends
+            // @@protoc_insertion_point(interface_extends:net_arch.array.Array)
+            com.google.protobuf.MessageOrBuilder {
+
+        /**
+         * <code>repeated int32 array = 1;</code>
+         */
+        java.util.List<java.lang.Integer> getArrayList();
+
+        /**
+         * <code>repeated int32 array = 1;</code>
+         */
+        int getArrayCount();
+
+        /**
+         * <code>repeated int32 array = 1;</code>
+         */
+        int getArray(int index);
     }
 
-    protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
-        internalGetFieldAccessorTable() {
-      return ru.spbau.egorov.net_arch.network.NetworkArray.internal_static_net_arch_array_Array_fieldAccessorTable
-          .ensureFieldAccessorsInitialized(
-              ru.spbau.egorov.net_arch.network.NetworkArray.Array.class, ru.spbau.egorov.net_arch.network.NetworkArray.Array.Builder.class);
-    }
-
-    public static com.google.protobuf.Parser<Array> PARSER =
-        new com.google.protobuf.AbstractParser<Array>() {
-      public Array parsePartialFrom(
-          com.google.protobuf.CodedInputStream input,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws com.google.protobuf.InvalidProtocolBufferException {
-        return new Array(input, extensionRegistry);
-      }
-    };
-
-    @java.lang.Override
-    public com.google.protobuf.Parser<Array> getParserForType() {
-      return PARSER;
-    }
-
-    public static final int ARRAY_FIELD_NUMBER = 1;
-    private java.util.List<java.lang.Integer> array_;
-    /**
-     * <code>repeated int32 array = 1;</code>
-     */
-    public java.util.List<java.lang.Integer>
-        getArrayList() {
-      return array_;
-    }
-    /**
-     * <code>repeated int32 array = 1;</code>
-     */
-    public int getArrayCount() {
-      return array_.size();
-    }
-    /**
-     * <code>repeated int32 array = 1;</code>
-     */
-    public int getArray(int index) {
-      return array_.get(index);
-    }
-
-    private void initFields() {
-      array_ = java.util.Collections.emptyList();
-    }
-    private byte memoizedIsInitialized = -1;
-    public final boolean isInitialized() {
-      byte isInitialized = memoizedIsInitialized;
-      if (isInitialized == 1) return true;
-      if (isInitialized == 0) return false;
-
-      memoizedIsInitialized = 1;
-      return true;
-    }
-
-    public void writeTo(com.google.protobuf.CodedOutputStream output)
-                        throws java.io.IOException {
-      getSerializedSize();
-      for (int i = 0; i < array_.size(); i++) {
-        output.writeInt32(1, array_.get(i));
-      }
-      getUnknownFields().writeTo(output);
-    }
-
-    private int memoizedSerializedSize = -1;
-    public int getSerializedSize() {
-      int size = memoizedSerializedSize;
-      if (size != -1) return size;
-
-      size = 0;
-      {
-        int dataSize = 0;
-        for (int i = 0; i < array_.size(); i++) {
-          dataSize += com.google.protobuf.CodedOutputStream
-            .computeInt32SizeNoTag(array_.get(i));
-        }
-        size += dataSize;
-        size += 1 * getArrayList().size();
-      }
-      size += getUnknownFields().getSerializedSize();
-      memoizedSerializedSize = size;
-      return size;
-    }
-
-    private static final long serialVersionUID = 0L;
-    @java.lang.Override
-    protected java.lang.Object writeReplace()
-        throws java.io.ObjectStreamException {
-      return super.writeReplace();
-    }
-
-    public static ru.spbau.egorov.net_arch.network.NetworkArray.Array parseFrom(
-        com.google.protobuf.ByteString data)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data);
-    }
-    public static ru.spbau.egorov.net_arch.network.NetworkArray.Array parseFrom(
-        com.google.protobuf.ByteString data,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data, extensionRegistry);
-    }
-    public static ru.spbau.egorov.net_arch.network.NetworkArray.Array parseFrom(byte[] data)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data);
-    }
-    public static ru.spbau.egorov.net_arch.network.NetworkArray.Array parseFrom(
-        byte[] data,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data, extensionRegistry);
-    }
-    public static ru.spbau.egorov.net_arch.network.NetworkArray.Array parseFrom(java.io.InputStream input)
-        throws java.io.IOException {
-      return PARSER.parseFrom(input);
-    }
-    public static ru.spbau.egorov.net_arch.network.NetworkArray.Array parseFrom(
-        java.io.InputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws java.io.IOException {
-      return PARSER.parseFrom(input, extensionRegistry);
-    }
-    public static ru.spbau.egorov.net_arch.network.NetworkArray.Array parseDelimitedFrom(java.io.InputStream input)
-        throws java.io.IOException {
-      return PARSER.parseDelimitedFrom(input);
-    }
-    public static ru.spbau.egorov.net_arch.network.NetworkArray.Array parseDelimitedFrom(
-        java.io.InputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws java.io.IOException {
-      return PARSER.parseDelimitedFrom(input, extensionRegistry);
-    }
-    public static ru.spbau.egorov.net_arch.network.NetworkArray.Array parseFrom(
-        com.google.protobuf.CodedInputStream input)
-        throws java.io.IOException {
-      return PARSER.parseFrom(input);
-    }
-    public static ru.spbau.egorov.net_arch.network.NetworkArray.Array parseFrom(
-        com.google.protobuf.CodedInputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws java.io.IOException {
-      return PARSER.parseFrom(input, extensionRegistry);
-    }
-
-    public static Builder newBuilder() { return Builder.create(); }
-    public Builder newBuilderForType() { return newBuilder(); }
-    public static Builder newBuilder(ru.spbau.egorov.net_arch.network.NetworkArray.Array prototype) {
-      return newBuilder().mergeFrom(prototype);
-    }
-    public Builder toBuilder() { return newBuilder(this); }
-
-    @java.lang.Override
-    protected Builder newBuilderForType(
-        com.google.protobuf.GeneratedMessage.BuilderParent parent) {
-      Builder builder = new Builder(parent);
-      return builder;
-    }
     /**
      * Protobuf type {@code net_arch.array.Array}
      */
-    public static final class Builder extends
-        com.google.protobuf.GeneratedMessage.Builder<Builder> implements
-        // @@protoc_insertion_point(builder_implements:net_arch.array.Array)
-        ru.spbau.egorov.net_arch.network.NetworkArray.ArrayOrBuilder {
-      public static final com.google.protobuf.Descriptors.Descriptor
-          getDescriptor() {
-        return ru.spbau.egorov.net_arch.network.NetworkArray.internal_static_net_arch_array_Array_descriptor;
-      }
-
-      protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
-          internalGetFieldAccessorTable() {
-        return ru.spbau.egorov.net_arch.network.NetworkArray.internal_static_net_arch_array_Array_fieldAccessorTable
-            .ensureFieldAccessorsInitialized(
-                ru.spbau.egorov.net_arch.network.NetworkArray.Array.class, ru.spbau.egorov.net_arch.network.NetworkArray.Array.Builder.class);
-      }
-
-      // Construct using ru.spbau.egorov.net_arch.ru.spbau.egorov.net_arch.network.NetworkArray.Array.newBuilder()
-      private Builder() {
-        maybeForceBuilderInitialization();
-      }
-
-      private Builder(
-          com.google.protobuf.GeneratedMessage.BuilderParent parent) {
-        super(parent);
-        maybeForceBuilderInitialization();
-      }
-      private void maybeForceBuilderInitialization() {
-        if (com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders) {
+    public static final class Array extends
+            com.google.protobuf.GeneratedMessage implements
+            // @@protoc_insertion_point(message_implements:net_arch.array.Array)
+            ArrayOrBuilder {
+        // Use Array.newBuilder() to construct.
+        private Array(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
+            super(builder);
+            this.unknownFields = builder.getUnknownFields();
         }
-      }
-      private static Builder create() {
-        return new Builder();
-      }
 
-      public Builder clear() {
-        super.clear();
-        array_ = java.util.Collections.emptyList();
-        bitField0_ = (bitField0_ & ~0x00000001);
-        return this;
-      }
-
-      public Builder clone() {
-        return create().mergeFrom(buildPartial());
-      }
-
-      public com.google.protobuf.Descriptors.Descriptor
-          getDescriptorForType() {
-        return ru.spbau.egorov.net_arch.network.NetworkArray.internal_static_net_arch_array_Array_descriptor;
-      }
-
-      public ru.spbau.egorov.net_arch.network.NetworkArray.Array getDefaultInstanceForType() {
-        return ru.spbau.egorov.net_arch.network.NetworkArray.Array.getDefaultInstance();
-      }
-
-      public ru.spbau.egorov.net_arch.network.NetworkArray.Array build() {
-        ru.spbau.egorov.net_arch.network.NetworkArray.Array result = buildPartial();
-        if (!result.isInitialized()) {
-          throw newUninitializedMessageException(result);
+        private Array(boolean noInit) {
+            this.unknownFields = com.google.protobuf.UnknownFieldSet.getDefaultInstance();
         }
-        return result;
-      }
 
-      public ru.spbau.egorov.net_arch.network.NetworkArray.Array buildPartial() {
-        ru.spbau.egorov.net_arch.network.NetworkArray.Array result = new ru.spbau.egorov.net_arch.network.NetworkArray.Array(this);
-        int from_bitField0_ = bitField0_;
-        if (((bitField0_ & 0x00000001) == 0x00000001)) {
-          array_ = java.util.Collections.unmodifiableList(array_);
-          bitField0_ = (bitField0_ & ~0x00000001);
+        private static final Array defaultInstance;
+
+        public static Array getDefaultInstance() {
+            return defaultInstance;
         }
-        result.array_ = array_;
-        onBuilt();
-        return result;
-      }
 
-      public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof ru.spbau.egorov.net_arch.network.NetworkArray.Array) {
-          return mergeFrom((ru.spbau.egorov.net_arch.network.NetworkArray.Array)other);
-        } else {
-          super.mergeFrom(other);
-          return this;
+        public Array getDefaultInstanceForType() {
+            return defaultInstance;
         }
-      }
 
-      public Builder mergeFrom(ru.spbau.egorov.net_arch.network.NetworkArray.Array other) {
-        if (other == ru.spbau.egorov.net_arch.network.NetworkArray.Array.getDefaultInstance()) return this;
-        if (!other.array_.isEmpty()) {
-          if (array_.isEmpty()) {
-            array_ = other.array_;
-            bitField0_ = (bitField0_ & ~0x00000001);
-          } else {
-            ensureArrayIsMutable();
-            array_.addAll(other.array_);
-          }
-          onChanged();
+        private final com.google.protobuf.UnknownFieldSet unknownFields;
+
+        @java.lang.Override
+        public final com.google.protobuf.UnknownFieldSet
+        getUnknownFields() {
+            return this.unknownFields;
         }
-        this.mergeUnknownFields(other.getUnknownFields());
-        return this;
-      }
 
-      public final boolean isInitialized() {
-        return true;
-      }
-
-      public Builder mergeFrom(
-          com.google.protobuf.CodedInputStream input,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws java.io.IOException {
-        ru.spbau.egorov.net_arch.network.NetworkArray.Array parsedMessage = null;
-        try {
-          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
-        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (ru.spbau.egorov.net_arch.network.NetworkArray.Array) e.getUnfinishedMessage();
-          throw e;
-        } finally {
-          if (parsedMessage != null) {
-            mergeFrom(parsedMessage);
-          }
+        private Array(
+                com.google.protobuf.CodedInputStream input,
+                com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                throws com.google.protobuf.InvalidProtocolBufferException {
+            initFields();
+            int mutable_bitField0_ = 0;
+            com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+                    com.google.protobuf.UnknownFieldSet.newBuilder();
+            try {
+                boolean done = false;
+                while (!done) {
+                    int tag = input.readTag();
+                    switch (tag) {
+                        case 0:
+                            done = true;
+                            break;
+                        default: {
+                            if (!parseUnknownField(input, unknownFields,
+                                    extensionRegistry, tag)) {
+                                done = true;
+                            }
+                            break;
+                        }
+                        case 8: {
+                            if (!((mutable_bitField0_ & 0x00000001) == 0x00000001)) {
+                                array_ = new java.util.ArrayList<>();
+                                mutable_bitField0_ |= 0x00000001;
+                            }
+                            array_.add(input.readInt32());
+                            break;
+                        }
+                        case 10: {
+                            int length = input.readRawVarint32();
+                            int limit = input.pushLimit(length);
+                            if (!((mutable_bitField0_ & 0x00000001) == 0x00000001) && input.getBytesUntilLimit() > 0) {
+                                array_ = new java.util.ArrayList<>();
+                                mutable_bitField0_ |= 0x00000001;
+                            }
+                            while (input.getBytesUntilLimit() > 0) {
+                                array_.add(input.readInt32());
+                            }
+                            input.popLimit(limit);
+                            break;
+                        }
+                    }
+                }
+            } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+                throw e.setUnfinishedMessage(this);
+            } catch (java.io.IOException e) {
+                throw new com.google.protobuf.InvalidProtocolBufferException(
+                        e.getMessage()).setUnfinishedMessage(this);
+            } finally {
+                if (((mutable_bitField0_ & 0x00000001) == 0x00000001)) {
+                    array_ = java.util.Collections.unmodifiableList(array_);
+                }
+                this.unknownFields = unknownFields.build();
+                makeExtensionsImmutable();
+            }
         }
-        return this;
-      }
-      private int bitField0_;
 
-      private java.util.List<java.lang.Integer> array_ = java.util.Collections.emptyList();
-      private void ensureArrayIsMutable() {
-        if (!((bitField0_ & 0x00000001) == 0x00000001)) {
-          array_ = new java.util.ArrayList<java.lang.Integer>(array_);
-          bitField0_ |= 0x00000001;
-         }
-      }
-      /**
-       * <code>repeated int32 array = 1;</code>
-       */
-      public java.util.List<java.lang.Integer>
-          getArrayList() {
-        return java.util.Collections.unmodifiableList(array_);
-      }
-      /**
-       * <code>repeated int32 array = 1;</code>
-       */
-      public int getArrayCount() {
-        return array_.size();
-      }
-      /**
-       * <code>repeated int32 array = 1;</code>
-       */
-      public int getArray(int index) {
-        return array_.get(index);
-      }
-      /**
-       * <code>repeated int32 array = 1;</code>
-       */
-      public Builder setArray(
-          int index, int value) {
-        ensureArrayIsMutable();
-        array_.set(index, value);
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>repeated int32 array = 1;</code>
-       */
-      public Builder addArray(int value) {
-        ensureArrayIsMutable();
-        array_.add(value);
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>repeated int32 array = 1;</code>
-       */
-      public Builder addAllArray(
-          java.lang.Iterable<? extends java.lang.Integer> values) {
-        ensureArrayIsMutable();
-        com.google.protobuf.AbstractMessageLite.Builder.addAll(
-            values, array_);
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>repeated int32 array = 1;</code>
-       */
-      public Builder clearArray() {
-        array_ = java.util.Collections.emptyList();
-        bitField0_ = (bitField0_ & ~0x00000001);
-        onChanged();
-        return this;
-      }
+        public static final com.google.protobuf.Descriptors.Descriptor
+        getDescriptor() {
+            return ru.spbau.egorov.net_arch.network.NetworkArray.internal_static_net_arch_array_Array_descriptor;
+        }
 
-      // @@protoc_insertion_point(builder_scope:net_arch.array.Array)
+        protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+        internalGetFieldAccessorTable() {
+            return ru.spbau.egorov.net_arch.network.NetworkArray.internal_static_net_arch_array_Array_fieldAccessorTable
+                    .ensureFieldAccessorsInitialized(
+                            ru.spbau.egorov.net_arch.network.NetworkArray.Array.class, ru.spbau.egorov.net_arch.network.NetworkArray.Array.Builder.class);
+        }
+
+        public static com.google.protobuf.Parser<Array> PARSER =
+                new com.google.protobuf.AbstractParser<Array>() {
+                    public Array parsePartialFrom(
+                            com.google.protobuf.CodedInputStream input,
+                            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                            throws com.google.protobuf.InvalidProtocolBufferException {
+                        return new Array(input, extensionRegistry);
+                    }
+                };
+
+        @java.lang.Override
+        public com.google.protobuf.Parser<Array> getParserForType() {
+            return PARSER;
+        }
+
+        public static final int ARRAY_FIELD_NUMBER = 1;
+        private java.util.List<java.lang.Integer> array_;
+
+        /**
+         * <code>repeated int32 array = 1;</code>
+         */
+        public java.util.List<java.lang.Integer>
+        getArrayList() {
+            return array_;
+        }
+
+        /**
+         * <code>repeated int32 array = 1;</code>
+         */
+        public int getArrayCount() {
+            return array_.size();
+        }
+
+        /**
+         * <code>repeated int32 array = 1;</code>
+         */
+        public int getArray(int index) {
+            return array_.get(index);
+        }
+
+        private void initFields() {
+            array_ = java.util.Collections.emptyList();
+        }
+
+        private byte memoizedIsInitialized = -1;
+
+        public final boolean isInitialized() {
+            byte isInitialized = memoizedIsInitialized;
+            if (isInitialized == 1) return true;
+            if (isInitialized == 0) return false;
+
+            memoizedIsInitialized = 1;
+            return true;
+        }
+
+        public void writeTo(com.google.protobuf.CodedOutputStream output)
+                throws java.io.IOException {
+            getSerializedSize();
+            for (int i = 0; i < array_.size(); i++) {
+                output.writeInt32(1, array_.get(i));
+            }
+            getUnknownFields().writeTo(output);
+        }
+
+        private int memoizedSerializedSize = -1;
+
+        public int getSerializedSize() {
+            int size = memoizedSerializedSize;
+            if (size != -1) return size;
+
+            size = 0;
+            {
+                int dataSize = 0;
+                for (int i = 0; i < array_.size(); i++) {
+                    dataSize += com.google.protobuf.CodedOutputStream
+                            .computeInt32SizeNoTag(array_.get(i));
+                }
+                size += dataSize;
+                size += 1 * getArrayList().size();
+            }
+            size += getUnknownFields().getSerializedSize();
+            memoizedSerializedSize = size;
+            return size;
+        }
+
+        private static final long serialVersionUID = 0L;
+
+        @java.lang.Override
+        protected java.lang.Object writeReplace()
+                throws java.io.ObjectStreamException {
+            return super.writeReplace();
+        }
+
+        public static ru.spbau.egorov.net_arch.network.NetworkArray.Array parseFrom(
+                com.google.protobuf.ByteString data)
+                throws com.google.protobuf.InvalidProtocolBufferException {
+            return PARSER.parseFrom(data);
+        }
+
+        public static ru.spbau.egorov.net_arch.network.NetworkArray.Array parseFrom(
+                com.google.protobuf.ByteString data,
+                com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                throws com.google.protobuf.InvalidProtocolBufferException {
+            return PARSER.parseFrom(data, extensionRegistry);
+        }
+
+        public static ru.spbau.egorov.net_arch.network.NetworkArray.Array parseFrom(byte[] data)
+                throws com.google.protobuf.InvalidProtocolBufferException {
+            return PARSER.parseFrom(data);
+        }
+
+        public static ru.spbau.egorov.net_arch.network.NetworkArray.Array parseFrom(
+                byte[] data,
+                com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                throws com.google.protobuf.InvalidProtocolBufferException {
+            return PARSER.parseFrom(data, extensionRegistry);
+        }
+
+        public static ru.spbau.egorov.net_arch.network.NetworkArray.Array parseFrom(java.io.InputStream input)
+                throws java.io.IOException {
+            return PARSER.parseFrom(input);
+        }
+
+        public static ru.spbau.egorov.net_arch.network.NetworkArray.Array parseFrom(
+                java.io.InputStream input,
+                com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                throws java.io.IOException {
+            return PARSER.parseFrom(input, extensionRegistry);
+        }
+
+        public static ru.spbau.egorov.net_arch.network.NetworkArray.Array parseDelimitedFrom(java.io.InputStream input)
+                throws java.io.IOException {
+            return PARSER.parseDelimitedFrom(input);
+        }
+
+        public static ru.spbau.egorov.net_arch.network.NetworkArray.Array parseDelimitedFrom(
+                java.io.InputStream input,
+                com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                throws java.io.IOException {
+            return PARSER.parseDelimitedFrom(input, extensionRegistry);
+        }
+
+        public static ru.spbau.egorov.net_arch.network.NetworkArray.Array parseFrom(
+                com.google.protobuf.CodedInputStream input)
+                throws java.io.IOException {
+            return PARSER.parseFrom(input);
+        }
+
+        public static ru.spbau.egorov.net_arch.network.NetworkArray.Array parseFrom(
+                com.google.protobuf.CodedInputStream input,
+                com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                throws java.io.IOException {
+            return PARSER.parseFrom(input, extensionRegistry);
+        }
+
+        public static Builder newBuilder() {
+            return Builder.create();
+        }
+
+        public Builder newBuilderForType() {
+            return newBuilder();
+        }
+
+        public static Builder newBuilder(ru.spbau.egorov.net_arch.network.NetworkArray.Array prototype) {
+            return newBuilder().mergeFrom(prototype);
+        }
+
+        public Builder toBuilder() {
+            return newBuilder(this);
+        }
+
+        @java.lang.Override
+        protected Builder newBuilderForType(
+                com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+            Builder builder = new Builder(parent);
+            return builder;
+        }
+
+        /**
+         * Protobuf type {@code net_arch.array.Array}
+         */
+        public static final class Builder extends
+                com.google.protobuf.GeneratedMessage.Builder<Builder> implements
+                // @@protoc_insertion_point(builder_implements:net_arch.array.Array)
+                ru.spbau.egorov.net_arch.network.NetworkArray.ArrayOrBuilder {
+            public static final com.google.protobuf.Descriptors.Descriptor
+            getDescriptor() {
+                return ru.spbau.egorov.net_arch.network.NetworkArray.internal_static_net_arch_array_Array_descriptor;
+            }
+
+            protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+            internalGetFieldAccessorTable() {
+                return ru.spbau.egorov.net_arch.network.NetworkArray.internal_static_net_arch_array_Array_fieldAccessorTable
+                        .ensureFieldAccessorsInitialized(
+                                ru.spbau.egorov.net_arch.network.NetworkArray.Array.class, ru.spbau.egorov.net_arch.network.NetworkArray.Array.Builder.class);
+            }
+
+            // Construct using ru.spbau.egorov.net_arch.ru.spbau.egorov.net_arch.network.NetworkArray.Array.newBuilder()
+            private Builder() {
+                maybeForceBuilderInitialization();
+            }
+
+            private Builder(
+                    com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+                super(parent);
+                maybeForceBuilderInitialization();
+            }
+
+            private void maybeForceBuilderInitialization() {
+                if (com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders) {
+                }
+            }
+
+            private static Builder create() {
+                return new Builder();
+            }
+
+            public Builder clear() {
+                super.clear();
+                array_ = java.util.Collections.emptyList();
+                bitField0_ = (bitField0_ & ~0x00000001);
+                return this;
+            }
+
+            public Builder clone() {
+                return create().mergeFrom(buildPartial());
+            }
+
+            public com.google.protobuf.Descriptors.Descriptor
+            getDescriptorForType() {
+                return ru.spbau.egorov.net_arch.network.NetworkArray.internal_static_net_arch_array_Array_descriptor;
+            }
+
+            public ru.spbau.egorov.net_arch.network.NetworkArray.Array getDefaultInstanceForType() {
+                return ru.spbau.egorov.net_arch.network.NetworkArray.Array.getDefaultInstance();
+            }
+
+            public ru.spbau.egorov.net_arch.network.NetworkArray.Array build() {
+                ru.spbau.egorov.net_arch.network.NetworkArray.Array result = buildPartial();
+                if (!result.isInitialized()) {
+                    throw newUninitializedMessageException(result);
+                }
+                return result;
+            }
+
+            public ru.spbau.egorov.net_arch.network.NetworkArray.Array buildPartial() {
+                ru.spbau.egorov.net_arch.network.NetworkArray.Array result = new ru.spbau.egorov.net_arch.network.NetworkArray.Array(this);
+                int from_bitField0_ = bitField0_;
+                if (((bitField0_ & 0x00000001) == 0x00000001)) {
+                    array_ = java.util.Collections.unmodifiableList(array_);
+                    bitField0_ = (bitField0_ & ~0x00000001);
+                }
+                result.array_ = array_;
+                onBuilt();
+                return result;
+            }
+
+            public Builder mergeFrom(com.google.protobuf.Message other) {
+                if (other instanceof ru.spbau.egorov.net_arch.network.NetworkArray.Array) {
+                    return mergeFrom((ru.spbau.egorov.net_arch.network.NetworkArray.Array) other);
+                } else {
+                    super.mergeFrom(other);
+                    return this;
+                }
+            }
+
+            public Builder mergeFrom(ru.spbau.egorov.net_arch.network.NetworkArray.Array other) {
+                if (other == ru.spbau.egorov.net_arch.network.NetworkArray.Array.getDefaultInstance()) return this;
+                if (!other.array_.isEmpty()) {
+                    if (array_.isEmpty()) {
+                        array_ = other.array_;
+                        bitField0_ = (bitField0_ & ~0x00000001);
+                    } else {
+                        ensureArrayIsMutable();
+                        array_.addAll(other.array_);
+                    }
+                    onChanged();
+                }
+                this.mergeUnknownFields(other.getUnknownFields());
+                return this;
+            }
+
+            public final boolean isInitialized() {
+                return true;
+            }
+
+            public Builder mergeFrom(
+                    com.google.protobuf.CodedInputStream input,
+                    com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                    throws java.io.IOException {
+                ru.spbau.egorov.net_arch.network.NetworkArray.Array parsedMessage = null;
+                try {
+                    parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+                } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+                    parsedMessage = (ru.spbau.egorov.net_arch.network.NetworkArray.Array) e.getUnfinishedMessage();
+                    throw e;
+                } finally {
+                    if (parsedMessage != null) {
+                        mergeFrom(parsedMessage);
+                    }
+                }
+                return this;
+            }
+
+            private int bitField0_;
+
+            private java.util.List<java.lang.Integer> array_ = java.util.Collections.emptyList();
+
+            private void ensureArrayIsMutable() {
+                if (!((bitField0_ & 0x00000001) == 0x00000001)) {
+                    array_ = new java.util.ArrayList<java.lang.Integer>(array_);
+                    bitField0_ |= 0x00000001;
+                }
+            }
+
+            /**
+             * <code>repeated int32 array = 1;</code>
+             */
+            public java.util.List<java.lang.Integer>
+            getArrayList() {
+                return java.util.Collections.unmodifiableList(array_);
+            }
+
+            /**
+             * <code>repeated int32 array = 1;</code>
+             */
+            public int getArrayCount() {
+                return array_.size();
+            }
+
+            /**
+             * <code>repeated int32 array = 1;</code>
+             */
+            public int getArray(int index) {
+                return array_.get(index);
+            }
+
+            /**
+             * <code>repeated int32 array = 1;</code>
+             */
+            public Builder setArray(
+                    int index, int value) {
+                ensureArrayIsMutable();
+                array_.set(index, value);
+                onChanged();
+                return this;
+            }
+
+            /**
+             * <code>repeated int32 array = 1;</code>
+             */
+            public Builder addArray(int value) {
+                ensureArrayIsMutable();
+                array_.add(value);
+                onChanged();
+                return this;
+            }
+
+            /**
+             * <code>repeated int32 array = 1;</code>
+             */
+            public Builder addAllArray(
+                    java.lang.Iterable<? extends java.lang.Integer> values) {
+                ensureArrayIsMutable();
+                com.google.protobuf.AbstractMessageLite.Builder.addAll(
+                        values, array_);
+                onChanged();
+                return this;
+            }
+
+            /**
+             * <code>repeated int32 array = 1;</code>
+             */
+            public Builder clearArray() {
+                array_ = java.util.Collections.emptyList();
+                bitField0_ = (bitField0_ & ~0x00000001);
+                onChanged();
+                return this;
+            }
+
+            // @@protoc_insertion_point(builder_scope:net_arch.array.Array)
+        }
+
+        static {
+            defaultInstance = new Array(true);
+            defaultInstance.initFields();
+        }
+
+        // @@protoc_insertion_point(class_scope:net_arch.array.Array)
     }
+
+    private static final com.google.protobuf.Descriptors.Descriptor
+            internal_static_net_arch_array_Array_descriptor;
+    private static
+    com.google.protobuf.GeneratedMessage.FieldAccessorTable
+            internal_static_net_arch_array_Array_fieldAccessorTable;
+
+    public static com.google.protobuf.Descriptors.FileDescriptor
+    getDescriptor() {
+        return descriptor;
+    }
+
+    private static com.google.protobuf.Descriptors.FileDescriptor
+            descriptor;
 
     static {
-      defaultInstance = new Array(true);
-      defaultInstance.initFields();
+        java.lang.String[] descriptorData = {
+                "\n\013array.proto\022\016net_arch.array\"\026\n\005Array\022\r" +
+                        "\n\005array\030\001 \003(\005B0\n ru.spbau.egorov.net_arc" +
+                        "h.networkB\014NetworkArray"
+        };
+        com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
+                new com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner() {
+                    public com.google.protobuf.ExtensionRegistry assignDescriptors(
+                            com.google.protobuf.Descriptors.FileDescriptor root) {
+                        descriptor = root;
+                        return null;
+                    }
+                };
+        com.google.protobuf.Descriptors.FileDescriptor
+                .internalBuildGeneratedFileFrom(descriptorData,
+                        new com.google.protobuf.Descriptors.FileDescriptor[]{
+                        }, assigner);
+        internal_static_net_arch_array_Array_descriptor =
+                getDescriptor().getMessageTypes().get(0);
+        internal_static_net_arch_array_Array_fieldAccessorTable = new
+                com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+                internal_static_net_arch_array_Array_descriptor,
+                new java.lang.String[]{"Array",});
     }
 
-    // @@protoc_insertion_point(class_scope:net_arch.array.Array)
-  }
-
-  private static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_net_arch_array_Array_descriptor;
-  private static
-    com.google.protobuf.GeneratedMessage.FieldAccessorTable
-      internal_static_net_arch_array_Array_fieldAccessorTable;
-
-  public static com.google.protobuf.Descriptors.FileDescriptor
-      getDescriptor() {
-    return descriptor;
-  }
-  private static com.google.protobuf.Descriptors.FileDescriptor
-      descriptor;
-  static {
-    java.lang.String[] descriptorData = {
-      "\n\013array.proto\022\016net_arch.array\"\026\n\005Array\022\r" +
-      "\n\005array\030\001 \003(\005B0\n ru.spbau.egorov.net_arc" +
-      "h.networkB\014NetworkArray"
-    };
-    com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
-        new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {
-          public com.google.protobuf.ExtensionRegistry assignDescriptors(
-              com.google.protobuf.Descriptors.FileDescriptor root) {
-            descriptor = root;
-            return null;
-          }
-        };
-    com.google.protobuf.Descriptors.FileDescriptor
-      .internalBuildGeneratedFileFrom(descriptorData,
-        new com.google.protobuf.Descriptors.FileDescriptor[] {
-        }, assigner);
-    internal_static_net_arch_array_Array_descriptor =
-      getDescriptor().getMessageTypes().get(0);
-    internal_static_net_arch_array_Array_fieldAccessorTable = new
-      com.google.protobuf.GeneratedMessage.FieldAccessorTable(
-        internal_static_net_arch_array_Array_descriptor,
-        new java.lang.String[] { "Array", });
-  }
-
-  // @@protoc_insertion_point(outer_class_scope)
+    // @@protoc_insertion_point(outer_class_scope)
 }

@@ -9,16 +9,11 @@ import java.net.Socket;
 import java.net.UnknownHostException;
 import java.util.List;
 
-import static ru.spbau.egorov.net_arch.network.NetworkArray.Array.parseDelimitedFrom;
 import static ru.spbau.egorov.net_arch.network.NetworkArray.Array.parseFrom;
 
-public class MultiThreadServer implements Server {
+public class MultiThreadServer extends Server {
 
-    private String hostName;
-    private int port;
-    private volatile boolean isRunning = true;
-
-    public MultiThreadServer(String hostname, int port) {
+    MultiThreadServer(String hostname, int port) {
         this.hostName = hostname;
         this.port = port;
     }
@@ -31,20 +26,31 @@ public class MultiThreadServer implements Server {
             e.printStackTrace();
             return;
         }
-        try (ServerSocket serverSocket = new ServerSocket(port,0,addr)) {
-            InetAddress address = serverSocket.getInetAddress();
-            hostName = address.getHostName();
+        try (ServerSocket serverSocket = new ServerSocket(port, 0, addr)) {
             while (isRunning) {
                 Socket clientSocket = serverSocket.accept();
                 Runnable worker = () -> {
-                    try (DataOutputStream outputStream = new DataOutputStream(clientSocket.getOutputStream());
-                         DataInputStream inputStream = new DataInputStream(clientSocket.getInputStream())) {
-                        NetworkArray.Array array = parseDelimitedFrom(inputStream);
-                        NetworkArray.Array.Builder builder = NetworkArray.Array.newBuilder();
-                        List<Integer> listArray = array.getArrayList();
-                        NetworkArray.Array sortedArray = builder.addAllArray(sort(listArray)).build();
-                        sortedArray.writeDelimitedTo(outputStream);
-                    } catch (IOException  e) {
+                    try {
+                        DataOutputStream outputStream = new DataOutputStream(clientSocket.getOutputStream());
+                        DataInputStream inputStream = new DataInputStream(clientSocket.getInputStream());
+                        int requestsCount = inputStream.readInt();
+                        for (int request = 0; request < requestsCount; request++) {
+                            int arrSize = inputStream.readInt();
+                            byte[] arr = new byte[arrSize];
+                            inputStream.readFully(arr);
+                            NetworkArray.Array array = parseFrom(arr);
+                            long processingTimeStart = System.currentTimeMillis();
+                            NetworkArray.Array.Builder builder = NetworkArray.Array.newBuilder();
+                            List<Integer> listArray = array.getArrayList();
+                            long sortingTimeStart = System.currentTimeMillis();
+                            NetworkArray.Array sortedArray = builder.addAllArray(sort(listArray)).build();
+                            int sortingTime = (int) (System.currentTimeMillis() - sortingTimeStart);
+                            outputStream.writeInt(sortedArray.getSerializedSize());
+                            sortedArray.writeTo(outputStream);
+                            outputStream.writeInt(sortingTime);
+                            outputStream.writeInt((int) (System.currentTimeMillis() - processingTimeStart));
+                        }
+                    } catch (IOException e) {
                         e.printStackTrace();
                     }
                 };
