@@ -1,0 +1,21 @@
+ClientsCount: 1
+ArraySize: 500
+ArchType: NONBLOCKING
+changingParameter: CLIENTS_COUNT
+timeDelay: 50
+requestCount: 10
+minVal: 1
+maxVal: 50
+increment: 5
+xValues	SORTING_TIME	SERVER_TIME	CLIENT_TIME
+10
+1	2	45	51
+6	1	41	47
+11	1	62	71
+16	2	85	96
+21	2	107	122
+26	3	120	134
+31	3	141	160
+36	4	158	176
+41	4	178	197
+46	5	194	217

@@ -1,0 +1,22 @@
+ClientsCount: 10
+ArraySize: 500
+ArchType: NONBLOCKING
+changingParameter: REQUEST_DELAY
+timeDelay: 1
+requestCount: 10
+minVal: 1
+maxVal: 1001
+increment: 100
+xValues	SORTING_TIME	SERVER_TIME	CLIENT_TIME
+11
+1	2	47	53
+101	3	87	97
+201	4	128	142
+301	5	164	182
+401	6	199	223
+501	7	236	264
+601	8	272	306
+701	9	305	338
+801	10	338	382
+901	11	372	419
+1001	12	401	452

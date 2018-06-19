@@ -101,11 +101,22 @@ public class ClientMenuController {
         Path path = Paths.get("./statistics.txt");
         try {
             DataOutputStream dos = new DataOutputStream(Files.newOutputStream(path));
-            String sep = System.getProperty("file.separator");
+            String sep = System.getProperty("line.separator");
+            dos.write(("ClientsCount: " + clientsCount.getText() + sep).getBytes());
+            dos.write(("ArraySize: " + arrSize.getText() + sep).getBytes());
+            dos.write(("ArchType: " + archType.getText() + sep).getBytes());
+            dos.write(("changingParameter: " + changingParameter.getText() + sep).getBytes());
+            dos.write(("timeDelay: " + timeDelay.getText() + sep).getBytes());
+            dos.write(("requestCount: " + requestsCount.getText() + sep).getBytes());
+            dos.write(("minVal: " + minVal.getText() + sep).getBytes());
+            dos.write(("maxVal: " + maxVal.getText() + sep).getBytes());
+            dos.write(("increment: " + increment.getText() + sep).getBytes());
             dos.write(("xValues\tSORTING_TIME\tSERVER_TIME\tCLIENT_TIME" + sep).getBytes());
             dos.write((String.valueOf(xValues.size()) + sep).getBytes());
-            for(int i=0;i<xValues.size();i++){
-                dos.write((String.valueOf(xValues.get(i)) +String.valueOf(yValues1.get(i)) +String.valueOf(yValues2.get(i)) +String.valueOf(yValues3.get(i)) + sep).getBytes());
+            for (int i = 0; i < xValues.size(); i++) {
+                dos.write((String.valueOf(xValues.get(i)) + "\t" +
+                        String.valueOf(yValues1.get(i)) + "\t" +
+                        String.valueOf(yValues2.get(i)) + "\t" + String.valueOf(yValues3.get(i)) + sep).getBytes());
             }
         } catch (IOException e) {
             e.printStackTrace();
