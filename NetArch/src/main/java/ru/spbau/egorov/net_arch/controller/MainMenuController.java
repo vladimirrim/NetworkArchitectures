@@ -9,7 +9,7 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
-public class Controller {
+public class MainMenuController {
     public Button setupClientButton;
     public Button setupServerButton;
 
