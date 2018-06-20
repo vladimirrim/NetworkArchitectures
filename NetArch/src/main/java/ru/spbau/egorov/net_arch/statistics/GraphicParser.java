@@ -99,16 +99,16 @@ public class GraphicParser extends Application {
                         yValues[i][j] = new ArrayList<>();
                     }
                 }
-                for (int i = 0; i < clientsSize; i++) {
+                for (int i = 0; i < delaySize; i++) {
                     for (int arch = 0; arch < 3; arch++) {
-                        xValues[arch].add(dis[arch][2].nextInt());
+                        xValues[arch].add(dis[arch][0].nextInt());
                         for (int metric = 0; metric < 3; metric++)
-                            yValues[arch][metric].add(dis[arch][2].nextInt());
+                            yValues[arch][metric].add(dis[arch][0].nextInt());
                     }
                 }
                 showChart(xValues[0], yValues[0][0], yValues[1][0], yValues[2][0], "Metric: Sorting time", "number of clients", "time, ms");
-                showChart(xValues[0], yValues[0][1], yValues[1][1], yValues[2][1], "Metric: Client processing time", "number of clients", "time, ms");
-                showChart(xValues[0], yValues[0][2], yValues[1][2], yValues[2][2], "Metric: Server processing time", "number of clients", "time, ms");
+                showChart(xValues[0], yValues[0][1], yValues[1][1], yValues[2][1], "Metric: Server processing time", "delay time", "time, ms");
+                showChart(xValues[0], yValues[0][2], yValues[1][2], yValues[2][2], "Metric: Client processing time", "delay time", "time, ms");
             }
         } catch (IOException e) {
             e.printStackTrace();
