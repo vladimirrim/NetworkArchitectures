@@ -1,6 +1,5 @@
 package ru.spbau.egorov.net_arch.controller;
 
-import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
@@ -9,7 +8,7 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
-public class MainMenuController {
+public class MainMenuController extends Controller{
     public Button setupClientButton;
     public Button setupServerButton;
 
@@ -29,7 +28,7 @@ public class MainMenuController {
         try {
             root = loader.load();
         } catch (IOException e) {
-            e.printStackTrace();
+            showInfoDialog(e.getLocalizedMessage());
             return;
         }
         Stage stage = new Stage();

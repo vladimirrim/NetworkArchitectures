@@ -8,7 +8,6 @@ import javafx.scene.control.TextArea;
 import javafx.stage.Stage;
 import ru.spbau.egorov.net_arch.network.Client;
 
-import java.io.DataInputStream;
 import java.io.DataOutputStream;
 import java.io.IOException;
 import java.nio.file.Files;
@@ -16,7 +15,7 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.ArrayList;
 
-public class ClientMenuController {
+public class ClientMenuController extends Controller{
     public TextArea arrSize;
     public TextArea timeDelay;
     public TextArea hostName;
@@ -67,7 +66,8 @@ public class ClientMenuController {
                 try {
                     thread.join();
                 } catch (InterruptedException e) {
-                    e.printStackTrace();
+                    showInfoDialog(e.getLocalizedMessage());
+                    return;
                 }
             }
             xValues.add(iteration);
@@ -119,7 +119,7 @@ public class ClientMenuController {
                         String.valueOf(yValues2.get(i)) + "\t" + String.valueOf(yValues3.get(i)) + sep).getBytes());
             }
         } catch (IOException e) {
-            e.printStackTrace();
+            showInfoDialog(e.getLocalizedMessage());
         }
     }
 

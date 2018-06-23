@@ -3,11 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="d52621bb-5aca-428a-aa43-2f2637390791" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/graphics/MetricClientTimeArraySize.png" beforeDir="false" afterPath="$PROJECT_DIR$/graphics/MetricClientTimeArraySize.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/graphics/MetricClientTimeClientsCount.png" beforeDir="false" afterPath="$PROJECT_DIR$/graphics/MetricClientTimeClientsCount.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/graphics/MetricServerTimeArraySize.png" beforeDir="false" afterPath="$PROJECT_DIR$/graphics/MetricServerTimeArraySize.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/graphics/MetricServerTimeClientsCount.png" beforeDir="false" afterPath="$PROJECT_DIR$/graphics/MetricServerTimeClientsCount.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/graphics/MetricServerTimeRequestDelay.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/spbau/egorov/net_arch/controller/ClientMenuController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/spbau/egorov/net_arch/controller/ClientMenuController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/spbau/egorov/net_arch/controller/MainMenuController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/spbau/egorov/net_arch/controller/MainMenuController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ru/spbau/egorov/net_arch/statistics/GraphicParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/spbau/egorov/net_arch/statistics/GraphicParser.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -24,7 +21,7 @@
       <file leaf-file-name="MultiThreadServer.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/ru/spbau/egorov/net_arch/network/MultiThreadServer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
+            <state relative-caret-position="17">
               <caret line="19" selection-start-line="19" selection-end-line="19" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -33,24 +30,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Server.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ru/spbau/egorov/net_arch/network/Server.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="15" column="5" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#323#324#0" expanded="true" />
-                <element signature="e#356#357#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="MainApp.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/ru/spbau/egorov/net_arch/MainApp.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
+            <state relative-caret-position="136">
               <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -59,11 +42,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ClientMenuController.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="ClientMenuController.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/ru/spbau/egorov/net_arch/controller/ClientMenuController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="57" column="85" selection-start-line="57" selection-start-column="85" selection-end-line="57" selection-end-column="85" />
+            <state relative-caret-position="510">
+              <caret line="30" column="7" selection-start-line="30" selection-start-column="7" selection-end-line="30" selection-end-column="7" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -71,14 +54,56 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GraphicParser.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ru/spbau/egorov/net_arch/statistics/GraphicParser.java">
+      <file leaf-file-name="MultiThreadWriteThreadServer.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ru/spbau/egorov/net_arch/network/MultiThreadWriteThreadServer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="95" column="49" lean-forward="true" selection-start-line="95" selection-start-column="49" selection-end-line="95" selection-end-column="49" />
+            <state relative-caret-position="643">
+              <caret line="52" column="60" selection-start-line="52" selection-start-column="60" selection-end-line="52" selection-end-column="60" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MainMenuController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ru/spbau/egorov/net_arch/controller/MainMenuController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="221">
+              <caret line="22" column="5" lean-forward="true" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ServerMenuController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ru/spbau/egorov/net_arch/controller/ServerMenuController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="289">
+              <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Controller.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ru/spbau/egorov/net_arch/controller/Controller.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="4" selection-start-line="4" selection-end-line="4" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GraphicParser.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ru/spbau/egorov/net_arch/statistics/GraphicParser.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="131">
+              <caret line="10" selection-start-line="10" selection-end-line="10" />
             </state>
           </provider>
         </entry>
@@ -96,32 +121,11 @@
       <file leaf-file-name="Client.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/ru/spbau/egorov/net_arch/network/Client.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="629">
-              <caret line="51" column="54" selection-start-line="51" selection-start-column="54" selection-end-line="51" selection-end-column="54" />
+            <state relative-caret-position="236">
+              <caret line="62" column="40" selection-start-line="62" selection-start-column="35" selection-end-line="62" selection-end-column="40" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="NonBlockingServer.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ru/spbau/egorov/net_arch/network/NonBlockingServer.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="36" column="47" selection-start-line="36" selection-start-column="47" selection-end-line="36" selection-end-column="47" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ServerFactory.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ru/spbau/egorov/net_arch/network/ServerFactory.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" selection-start-line="10" selection-end-line="10" />
             </state>
           </provider>
         </entry>
@@ -141,6 +145,7 @@
     <findStrings>
       <find>parseFr</find>
       <find>serverPro</find>
+      <find>print</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -159,7 +164,6 @@
         <option value="$PROJECT_DIR$/src/main/java/ru/spbau/egorov/net_arch/network/Client.java" />
         <option value="$PROJECT_DIR$/src/main/resources/fxml/ServerMenu.fxml" />
         <option value="$PROJECT_DIR$/src/main/java/ru/spbau/egorov/net_arch/controller/ServerMenuController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ru/spbau/egorov/net_arch/controller/Controller.java" />
         <option value="$PROJECT_DIR$/src/main/java/ru/spbau/egorov/net_arch/network/MultiThreadServer.java" />
         <option value="$PROJECT_DIR$/src/main/java/ru/spbau/egorov/net_arch/network/NetworkArray.java" />
         <option value="$PROJECT_DIR$/src/main/java/ru/spbau/egorov/net_arch/network/NonBlockingServer.java" />
@@ -167,6 +171,8 @@
         <option value="$PROJECT_DIR$/src/main/java/ru/spbau/egorov/net_arch/network/ServerFactory.java" />
         <option value="$PROJECT_DIR$/src/main/java/ru/spbau/egorov/net_arch/MainApp.java" />
         <option value="$PROJECT_DIR$/src/main/java/ru/spbau/egorov/net_arch/controller/ClientMenuController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ru/spbau/egorov/net_arch/controller/Controller.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ru/spbau/egorov/net_arch/controller/MainMenuController.java" />
         <option value="$PROJECT_DIR$/src/main/java/ru/spbau/egorov/net_arch/statistics/GraphicParser.java" />
       </list>
     </option>
@@ -201,8 +207,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -288,7 +292,9 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="AndroidView" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -413,12 +419,13 @@
       <workItem from="1529233760788" duration="597000" />
       <workItem from="1529333161047" duration="43954000" />
       <workItem from="1529429111392" duration="12775000" />
-      <workItem from="1529487560300" duration="209000" />
+      <workItem from="1529487560300" duration="812000" />
+      <workItem from="1529742383753" duration="532000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="64551000" />
+    <option name="totallyTimeSpent" value="65624000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -435,7 +442,6 @@
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.328125" />
-      <window_info anchor="bottom" id="Messages" order="7" weight="0.328125" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
@@ -443,11 +449,11 @@
       <window_info anchor="right" id="Maven Projects" order="3" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32954547" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49932885" visible="true" weight="0.22649573" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49932885" weight="0.22649573" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.328125" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26778522" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27181208" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -461,20 +467,21 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32905984" />
+      <window_info anchor="bottom" id="Messages" order="7" weight="0.328125" />
     </layout>
     <layout-to-restore>
       <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32905984" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
-      <window_info anchor="bottom" id="Version Control" order="10" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49932885" weight="0.21367522" />
       <window_info anchor="right" id="Theme Preview" order="5" />
-      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19127516" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32905984" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49932885" weight="0.21367522" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
@@ -484,10 +491,10 @@
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.32905984" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50067115" side_tool="true" weight="0.2863248" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Version Control" order="10" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.31623933" />
       <window_info id="Capture Tool" order="5" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32905984" />
+      <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Messages" order="11" weight="0.32905984" />
       <window_info anchor="right" id="Maven Projects" order="8" />
       <window_info id="Favorites" order="6" side_tool="true" />
@@ -557,16 +564,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/spbau/egorov/net_arch/network/NonBlockingServer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="21" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ru/spbau/egorov/net_arch/network/Client.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
@@ -588,6 +585,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
           <caret line="17" column="26" selection-start-line="17" selection-start-column="26" selection-end-line="17" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -659,6 +659,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="2" column="23" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -851,31 +854,14 @@
       </provider>
       <provider editor-type-id="JavaFX-Scene-Builder" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/spbau/egorov/net_arch/controller/ServerMenuController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/spbau/egorov/net_arch/controller/MainMenuController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="26" selection-start-line="17" selection-start-column="26" selection-end-line="17" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/spbau/egorov/net_arch/network/MultiThreadWriteThreadServer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="884">
-          <caret line="52" column="60" selection-start-line="52" selection-start-column="60" selection-end-line="52" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ru/spbau/egorov/net_arch/network/NetworkArray.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1632">
           <caret line="103" column="65" selection-start-line="103" selection-start-column="65" selection-end-line="103" selection-end-column="65" />
+          <folding>
+            <element signature="e#1386#1387#0" expanded="true" />
+            <element signature="e#1487#1488#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -909,16 +895,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/statistics.txt" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/spbau/egorov/net_arch/network/MultiThreadServer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="19" selection-start-line="19" selection-end-line="19" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/fxml/MainMenu.fxml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
@@ -928,30 +904,20 @@
       <provider editor-type-id="JavaFX-Scene-Builder" />
     </entry>
     <entry file="file://$PROJECT_DIR$/statistics_MULTI_ARRAY_SIZE.txt" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/spbau/egorov/net_arch/network/MultiThreadWriteThreadServer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="643">
+          <caret line="52" column="60" selection-start-line="52" selection-start-column="60" selection-end-line="52" selection-end-column="60" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ru/spbau/egorov/net_arch/MainApp.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
+        <state relative-caret-position="136">
           <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/spbau/egorov/net_arch/network/Client.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="629">
-          <caret line="51" column="54" selection-start-line="51" selection-start-column="54" selection-end-line="51" selection-end-column="54" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/spbau/egorov/net_arch/controller/ClientMenuController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="57" column="85" selection-start-line="57" selection-start-column="85" selection-end-line="57" selection-end-column="85" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -960,8 +926,62 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ru/spbau/egorov/net_arch/statistics/GraphicParser.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="95" column="49" lean-forward="true" selection-start-line="95" selection-start-column="49" selection-end-line="95" selection-end-column="49" />
+        <state relative-caret-position="131">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/spbau/egorov/net_arch/controller/Controller.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/spbau/egorov/net_arch/controller/MainMenuController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="22" column="5" lean-forward="true" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/spbau/egorov/net_arch/controller/ServerMenuController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/spbau/egorov/net_arch/network/Client.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="236">
+          <caret line="62" column="40" selection-start-line="62" selection-start-column="35" selection-end-line="62" selection-end-column="40" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/spbau/egorov/net_arch/network/MultiThreadServer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/spbau/egorov/net_arch/controller/ClientMenuController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="30" column="7" selection-start-line="30" selection-start-column="7" selection-end-line="30" selection-end-column="7" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
